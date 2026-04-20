@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500&display=swap');
+
+.tailwind { font-family: 'Inter', system_ui, sans-serif; }
+
+.heading-font { font-family: 'Poppins', sans-serif; }
+
+.hero-bg { background: linear-gradient(rgba(16, 185, 129, 0.85), rgba(16, 185, 129, 0.85)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat; }
+
+.section-header::after { content: ''; position: absolute; width: 70px; height: 4px; background-color: #10b981; bottom: -10px; left: 50%; transform: translateX(-50%); }
+
+.rabbit-icon { animation: hop 2s infinite ease-in-out; }
+
+@keyframes hop { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+
+/* Form focus styles */
+input:focus, select:focus { box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.2); }
