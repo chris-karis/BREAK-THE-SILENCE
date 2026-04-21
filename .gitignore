@@ -1,3 +1,7 @@
+# Ignore development dependencies and local services
+notebooklm-mcp/
+.gitmodules
+
 # Dependencies
 node_modules/
 
