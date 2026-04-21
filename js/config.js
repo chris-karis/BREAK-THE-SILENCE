@@ -27,24 +27,8 @@ const config = {
 };
 
 // AUTO-REGISTER WITH NOTEBOOKLM MCP
-// This code is disabled to prevent issues in CI/Production environments.
-// Uncomment only for local development with a running MCP bridge.
-/*
-if (typeof window !== 'undefined') {
-  window.addEventListener('load', () => {
-    const mcpUrl = 'http://localhost:3000/mcp';
-    fetch(mcpUrl + '/register', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: 'Lingma',
-        capabilities: ['memory', 'firecrawl', 'mcp-integration'],
-        workspace: 'BREAK THE SILENCE'
-      })
-    }).catch(() => console.log('MCP server not running - will retry on next load'));
-  });
-}
-*/
+// This code was causing issues in CI environment by trying to connect to localhost
+// It's only needed for local development, so we're removing it entirely
 
 // Export the config object
 if (typeof module !== 'undefined' && module.exports) {
