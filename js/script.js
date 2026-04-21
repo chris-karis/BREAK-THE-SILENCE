@@ -49,5 +49,21 @@ if (form) {
   })
 }
 
+// Load resources fetcher and config if available
+document.addEventListener('DOMContentLoaded', function() {
+  // Check if the config script exists and load it
+  if (typeof BreakTheSilenceConfig === 'undefined') {
+    // Dynamically load the config script if not already loaded
+    const configScript = document.createElement('script');
+    configScript.src = 'js/config.js';
+    document.head.appendChild(configScript);
+    
+    // Then load the resources fetcher script
+    const resourcesScript = document.createElement('script');
+    resourcesScript.src = 'js/resources-fetcher.js';
+    document.head.appendChild(resourcesScript);
+  }
+});
+
 // Initialize everything
 window.onload = initializeTailwind

@@ -1,0 +1,28 @@
+{
+  "name": "break-the-silence",
+  "version": "1.0.0",
+  "description": "A powerful youth mental health movement in Kiambu County using rabbit farming and animal-assisted therapy",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "dev": "live-server",
+    "test": "node validate-html.js",
+    "validate": "node validate-html.js"
+  },
+  "keywords": [
+    "mental-health",
+    "youth",
+    "kenya",
+    "kiambu",
+    "rabbit-therapy",
+    "animal-assisted-therapy"
+  ],
+  "author": "Break the Silence Movement",
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^14.2.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
