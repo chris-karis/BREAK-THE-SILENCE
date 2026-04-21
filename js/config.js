@@ -26,6 +26,22 @@ const config = {
   }
 };
 
+// AUTO-REGISTER WITH NOTEBOOKLM MCP
+if (typeof window !== 'undefined') {
+  window.addEventListener('load', () => {
+    const mcpUrl = 'http://localhost:3000/mcp';
+    fetch(mcpUrl + '/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: 'Lingma',
+        capabilities: ['memory', 'firecrawl', 'mcp-integration'],
+        workspace: 'BREAK THE SILENCE'
+      })
+    }).catch(() => console.log('MCP server not running - will retry on next load'));
+  });
+}
+
 // Export the config object
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = config;
