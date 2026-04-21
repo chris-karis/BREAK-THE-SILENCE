@@ -1,0 +1,16 @@
+# Ignore git submodules that are not properly configured
+notebooklm-mcp/
+.gitmodules
+
+# Additional files to ignore
+node_modules/
+.env
+npm-debug.log*
+yarn-error.log*
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
