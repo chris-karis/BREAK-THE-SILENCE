@@ -1,8 +1,0 @@
-// ... existing .gitmodules content ...
-
-// REMOVED: notebooklm-mcp submodule entry
-// [submodule "notebooklm-mcp"]
-// 	path = notebooklm-mcp
-// 	url = <missing-url>
-
-// ... remaining .gitmodules content ...
