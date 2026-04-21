@@ -27,6 +27,9 @@ const config = {
 };
 
 // AUTO-REGISTER WITH NOTEBOOKLM MCP
+// This code is disabled to prevent issues in CI/Production environments.
+// Uncomment only for local development with a running MCP bridge.
+/*
 if (typeof window !== 'undefined') {
   window.addEventListener('load', () => {
     const mcpUrl = 'http://localhost:3000/mcp';
@@ -41,6 +44,7 @@ if (typeof window !== 'undefined') {
     }).catch(() => console.log('MCP server not running - will retry on next load'));
   });
 }
+*/
 
 // Export the config object
 if (typeof module !== 'undefined' && module.exports) {

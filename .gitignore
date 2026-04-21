@@ -1,6 +1,5 @@
 # Ignore development dependencies and local services
-notebooklm-mcp/
-.gitmodules
+
 
 # Dependencies
 node_modules/
@@ -51,3 +50,7 @@ Thumbs.db
 .firecrawl/
 .npm/
 npm-debug.log*
+
+# NotebookLM & MCP Bridge
+notebooklm-mcp/
+mcp-server/
